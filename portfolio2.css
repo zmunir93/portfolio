@@ -1,7 +1,7 @@
 body {
 	background-color: #CBEEF3;
 	font-family: 'Noto Serif', serif;
-	/*margin: 0;*/
+	margin: 0;
 }
 
 img {
@@ -26,12 +26,25 @@ a:hover {
 	color: #848C8E;
 }
 
+.home-hero {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .intro {
 	width: 100%;
   margin: 0 auto;
   padding: 8% 0;
   text-align: center;
   color: #848C8E;
+  height: 100%;
+}
+
+.home-hero {
+	background-image: url("public/christopher-gower-291246.jpg"); 
 }
 
 .intro h1 {
@@ -39,7 +52,7 @@ a:hover {
   text-align: center;
 }
 
-.intro img {
+.container img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -50,10 +63,15 @@ a:hover {
 	font-size: 4em;
 }
 
-.container {
-	/*background-color: white;*/
+h3.coding-lang {
+	padding: 1em;
 }
 
+.about {
+	margin-top: 7em;
+	padding: 0 4em;
+	text-align: center;
+}
 
 .about h3 {
 	font-size: 4em;
@@ -61,6 +79,10 @@ a:hover {
 
 .about p {
 	font-size: 3em;
+}
+
+.about-content {
+	text-align: left;
 }
 
 .languages {
@@ -100,9 +122,67 @@ a:hover {
 .contact-content {
 	margin-bottom: 8em;
 }
-	list-style: none;
+	/*list-style: none;*/
 
 .contact-content a {
 	text-decoration: none;
 	font-size: 3em;
+}
+
+/* Size for tablet devices*/
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  h3 {
+  	font-size: 5em;
+  }
+
+  .about p {
+  	font-size: 2em;
+  }
+
+  .languages p {
+  	font-size: 2em;
+  }
+}
+
+/* Size for Desktop screens */
+
+@media screen and (min-width: 1024px){
+  h3 {
+  	font-size: 2em;
+  }
+
+  h3 .coding-lang {
+  	font-size: 2em;
+  }
+
+  .container {
+  	max-width: 65%;
+  	margin: 0 auto;
+  	align-items: baseline; 
+  }
+
+  .about p {
+  	font-size: 1.3em;
+  }
+
+  .languages {
+  	display: flex;
+  	margin: 5em 0;
+  }
+
+  .languages p {
+  	padding: 0 1em;
+  	font-size: 1.3em;
+  }
+
+  .languages img {
+  	padding: 4em;
+  	border-radius: 0;
+  }
+
+  .left {
+  	flex-direction: row-reverse;
+  }
+
 }

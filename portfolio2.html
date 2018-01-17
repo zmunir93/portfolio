@@ -4,29 +4,36 @@
 	<title>Zeshan's Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="portfolio2.css">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cambo|EB+Garamond|Noto+Serif|Simonetta" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="parallax.js"></script>
 </head>
 <body>
 
 <header>
-	<div class="intro">
-	<img src="public/rsz_copy_of_munirzeshan_cropped.jpg" alt="pic of Zeshan">
-		<h1>Zeshan Munir</h1>
-		<h2>Full Stack Web Developer</h2>
-	</div>
+	<section class="home-hero parallax--bg" >
+		<div class="intro"
+		data-parallax="scroll" data-image-src="public/christopher-gower-291246.jpg">
+			<h1>Zeshan Munir</h1>
+			<h2>Full Stack Web Developer</h2>
+		</div>
+	</section>
 </header>
 
 <div class="container">
 	<section class="about">
+		<img src="public/rsz_copy_of_munirzeshan_cropped.jpg" alt="pic of Zeshan">
 		<div class="about-content">
 			<h3>Hi, I'm Zeshan</h3>
 			<p>I am an eager and young Full Stack Web Developer. I have studied Business Management and as a newcomer to web development, I have been able to learn plenty in a short amount of time. I look forward to expanding my knowledge and studying more Javascript and React.</p>
 		</div>
+	<h3 class="coding-lang">coding languages i am fluent in</h3>
 	</section>
 
-	<h3>coding languages i am fluent in</h3>
 	
-	<section class="languages">
-		<div class="image-area left">
+	<section class="languages left">
+		<div class="image-area">
 			<img src="public/HTM5-CSS-3.png" alt="HTML/CSS image">
 		</div>
 		<div class="text-box">
@@ -45,13 +52,13 @@
 		<div class="text-box">
 			<div class="text-box-content">
 				<h3>Javascript</h3>
-				<p>Javascript is very much a new language to me. Currently, I understand the differences between ES3, ES5, and ES6. I also understand how to use jQuery. My main focus is to strengthen my JS coding and learn React</p>
+				<p>Javascript is very much a new language to me. Currently, I understand the differences between ES3, ES5, and ES6. I also understand how to use jQuery. My main focus is to strengthen my JS coding and learn React.</p>
 			</div>
 		</div>
 	</section>
 
-<section class="languages">
-		<div class="image-area left">
+<section class="languages left">
+		<div class="image-area">
 			<img src="public/ruby-vector-logo.png" alt="ruby pic">
 		</div>
 		<div class="text-box">
