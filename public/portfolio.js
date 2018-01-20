@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var toggle = $('#ss_toggle');
   var menu = $('#ss_menu');
   var rot;
+
   
   $('#ss_toggle').on('click', function(ev) {
     rot = parseInt($(this).data('rot')) - 180;
@@ -39,5 +40,8 @@ $(document).ready(function() {
 
 		$('.parallax--bg').css('background-position', 'center '+(wScroll*0.08)+'%')
 	}
+
+  $(".item").brazzersCarousel();
+
 
 });

@@ -1,5 +1,4 @@
 body {
-	background-color: #CBEEF3;
 	font-family: 'Noto Serif', serif;
 	margin: 0;
 }
@@ -18,7 +17,6 @@ ul {
 
 li {
 	list-style: none;
-/*	font-size: 3em;*/
 }
 
 i {
@@ -41,7 +39,7 @@ a:hover {
 }
 
 .home-img1 {
-	background-image: url("public/christopher-gower-291246.jpg"); 
+	background-image: url("images/christopher-gower-291246.jpg"); 
 }
 
 
@@ -67,6 +65,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.container2 p {
+    font-size: 3em;
+    padding: 1em;
+}
+
 .intro h2 {
 	font-size: 4em;
 }
@@ -78,7 +81,6 @@ h3.coding-lang {
 
 .about {
 	margin-top: 7em;
-	/*padding: 0 4em;*/
 	text-align: center;
 }
 
@@ -109,7 +111,6 @@ h3.coding-lang {
 
 .languages img {
 	text-align: center;
-	/*margin: 0em auto;*/
 	padding: 5em 5em 0 5em;
 	width: 300px;
 	height: 300px;
@@ -135,7 +136,6 @@ h3.coding-lang {
 .contact-content {
 	margin-bottom: 8em;
 }
-	/*list-style: none;*/
 
 .contact-content a {
 	text-decoration: none;
@@ -143,19 +143,14 @@ h3.coding-lang {
 }
 
 ul li a {
-	/*width: 1.4em;*/
-	/*height: 4em;*/
-	/*background: pink;*/
 	color: white;
 	text-align: center;
-	/*line-height: 4em;*/
-	/*display: block;*/
 	font-size: 3em;
 	margin: 0 3em;
 	border-radius: 50%;
 }
 
-/* MENU buttons *************************/
+/****************** Menu buttons ******************/
 
 #ss_menu {
   bottom: 30px;
@@ -370,7 +365,7 @@ ul li a {
 }
 
 #ss_menu div:nth-child(4) {
-  bottom: 299spx;
+  bottom: 299px;
   left: 0.0px;
 }
 
@@ -452,38 +447,70 @@ badbounce {  0%, 100% {
   animation: badbounce 1s linear;
 }
 
-/* MENU button ends ************************/
+/******************* Carousel ************************/
 
-
-
-
-
-
-
-/*.fa-linkedin {
-	padding-top: 5px;
-	color: white;
-	height: 1.2em;
-	width: 1.3em;
-	background-color: #285981;
-	border-radius: 50%;
+/*!
+ * jQuery Brazzers Carousel v1.0.0 (http://webdesign-master.ru)
+ * Copyright 2015 WebDesign Master.
+ */
+ 
+.brazzers-daddy:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.brazzers-daddy {
+  position: relative;
+}
+.brazzers-daddy img {
+  width: 100%;
+  position: relative;
+  display: none;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+}
+.brazzers-daddy img:first-child {
+  display: block;
+}
+.tmb-wrap {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.tmb-wrap .tmb-wrap-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.tmb-wrap-table div {
+  display: table-cell;
+  transition: all .3s ease;
+  border-bottom: 5px solid transparent;
+  padding-top: 10px;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.tmb-wrap-table div.active {
+  border-color: #FBB254;
+}
+.tmb-wrap-table div:first-child:last-child {
+  border-color: transparent;
 }
 
-.fa-linkedin:hover {
-	opacity: 0.8;
+  .col-md-4 {
+  width:100% !important;
+  padding: 0px !important;
 }
 
-.fa-github {
-	color: black;
-	height: 1em;
-	width: 1em;
-	background-color: white;
-	border-radius: 50%;
-}
 
-.fa-github:hover {
-	opacity: 0.7;
-}*/
+
 
 /* Size for tablet devices*/
 
@@ -501,14 +528,14 @@ badbounce {  0%, 100% {
   }
 
     .home-img2 {
-	background-image: url("public/ilya-pavlov-87438.jpg");
+	background-image: url("images/95cdfeef.jpeg");
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*margin:1em calc(50% - 50vw);*/
 	}
+
 }
 
 /* Size for Desktop screens */
@@ -516,6 +543,7 @@ badbounce {  0%, 100% {
 @media screen and (min-width: 1024px){
   h3 {
   	font-size: 2em;
+    margin: 2em 0;
   }
 
   h3 .coding-lang {
@@ -523,10 +551,21 @@ badbounce {  0%, 100% {
   	height: 4em;
   }
 
+  .cushion {
+    margin: 10em 0;
+  }
+
   .container {
   	max-width: 65%;
   	margin: 0 auto;
   	align-items: baseline; 
+  }
+
+  .container2 {
+    max-width: 65%;
+    margin: 0 auto;
+    align-items: baseline; 
+    padding-bottom: 15em;
   }
 
   .about p {
@@ -553,34 +592,54 @@ badbounce {  0%, 100% {
   }
 
   .home-img2 {
-	background-image: url("public/ilya-pavlov-87438.jpg");
+	background-image: url("images/95cdfeef.jpeg");
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*margin:1em calc(50% - 50vw);*/
+  margin: 0 -18.28vw;
 	}
 
   #ss_menu div:nth-child(1) {
   top: 0px;
   left: -160px;
-}
+  }
 
-#ss_menu div:nth-child(2) {
-  top: -80.0px;
-  left: -138.56406px;
-}
+  #ss_menu div:nth-child(2) {
+    top: -80.0px;
+    left: -138.56406px;
+  }
 
-#ss_menu div:nth-child(3) {
-  top: -138.56406px;
-  left: -80.0px;
-}
+  #ss_menu div:nth-child(3) {
+    top: -138.56406px;
+    left: -80.0px;
+  }
 
-#ss_menu div:nth-child(4) {
-  top: -160px;
-  left: 0.0px;
-}
+  #ss_menu div:nth-child(4) {
+    top: -160px;
+    left: 0.0px;
+  }
 
+  .col-md-4 {
+  padding: 0px !important;
+  }
+
+  .container2 p {
+    font-size: 1.3em;
+  }
+
+  .app-info h2 {
+    margin-top: 2em;
+  }
+
+  .project-card {
+    width: 30em;
+  }
+
+
+  .project-card p {
+    font-size: 1.3em;
+  }
 
 }
