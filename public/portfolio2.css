@@ -58,6 +58,12 @@ a:hover {
   text-align: center;
 }
 
+.container {
+    width: 100% !important;
+    margin: 0 auto;
+    align-items: baseline; 
+  }
+
 .container img {
   height: 300px;
   width: 300px;
@@ -112,7 +118,7 @@ h3.coding-lang {
 .languages img {
 	text-align: center;
 	padding: 5em 5em 0 5em;
-	width: 300px;
+	width: 360px;
 	height: 300px;
 	border-radius: 0;
 }
@@ -519,22 +525,40 @@ badbounce {  0%, 100% {
   	font-size: 5em;
   }
 
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: baseline;
+  }
+
   .about p {
-  	font-size: 2em;
+    font-size: 1.5em;
   }
 
   .languages p {
-  	font-size: 2em;
+    font-size: 1.5em;
   }
 
     .home-img2 {
-	background-image: url("images/95cdfeef.jpeg");
-	position: relative;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	}
+  background-image: url("images/95cdfeef.jpeg");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
+  .container2 {
+    max-width: 80%;
+    margin: 0 auto;
+    /*align-items: baseline; */
+    padding-bottom: 15em;
+  }
+
+  .container2 p {
+    font-size: 1.7em;
+  }
 
 }
 
@@ -584,6 +608,7 @@ badbounce {  0%, 100% {
   }
 
   .languages img {
+    width: 300px;
   	padding: 4em;
   }
 
@@ -598,7 +623,7 @@ badbounce {  0%, 100% {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-  margin: 0 -18.28vw;
+  /*margin: 0 -18.28vw;*/
 	}
 
   #ss_menu div:nth-child(1) {
@@ -629,12 +654,19 @@ badbounce {  0%, 100% {
     font-size: 1.3em;
   }
 
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .app-info h2 {
     margin-top: 2em;
   }
 
   .project-card {
     width: 30em;
+    margin: 0 1em 4em 1em;
   }
 
 
